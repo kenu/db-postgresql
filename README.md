@@ -17,10 +17,16 @@ yarn
 yarn start
 ```
 
-* open http://localhost:3000/api/users
+- open http://localhost:3000/api/users
 
 ## Test
 
 ```bash
 yarn test
+```
+
+## Reverse Models
+
+```bash
+npx sequelize-auto -o "./models" -h $DBHOST -d $DBNAME -u $DBUSER -x -p 5432 -e postgres
 ```
